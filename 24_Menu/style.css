@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(80, 76, 76);
+}
+.container{
+    width: 99vw;
+}
+
+.nav-container{
+    display: flex;
+    background-color: lightgray;
+}
+.nav{
+    display: flex;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 130px;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    /* background-color: red; */
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 26px;
+    padding: 5px;
+
+}
+
+.nav ul li a:hover{
+    color: lightgray;
+    background-color: purple;
+}
+
+.nav h2{
+    display: flex;
+    position: static;
+    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+.nav ul li{
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid none;
+    /* background-color: aqua; */
+    border-radius: 5px;
+    padding: 7px;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #c2c500; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(209, 56, 56) !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 1px solid black;
+    background-color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+
+  .sliderContent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide{
+    display: none;
+    width: 100%;
+    height: 700px;
+}
+
+.sliderContent .slide img{
+    width: 100%;
+    height: 98vh;
+}
+
+.sliderContent .prevSlide,.sliderContent .nextSlide{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 15px;
+    color: rgb(213, 229, 230);
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.6s ease;
+}
+
+.sliderContent .prevSlide:hover,
+.sliderContent .nextSlide:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+
+}
+
+.sliderContent .prevSlide{
+    left: 0px;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.sliderContent .nextSlide{
+    right: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.dots{
+    position: absolute;
+    bottom: 20px;
+}
+
+.dots .dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: bisque;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.dots .dot:hover{
+    background-color: red;
+    transition: 0.5s;
+
+}
+
+.active{
+    background-color: red !important;
+}
+
+/* .card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container .row .col{
+    display: inline-block;
+
+} */
+.card-container .row {
+    margin-left: 35px;
+}
+
+.card-container .row .col .col-in{
+    display: inline-block;
+    /* margin: 5px 5px 0px 2px; */
+    border: 1px solid black;
+    background-color: white;
+    width: 19%;
+    height: auto;
+}
+
+.card-container .row .col .col-in .inside{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    border: 0 solid;
+    background-color: rgb(245, 235, 235);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card-container .row .col div img{
+
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+}
+
+.main-popup{
+    display: none;
+    border: 1px solid black;
+    background-color: rgb(255, 71, 255);
+    color: white;
+    width: 400px;
+    height: 180px;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+
+.close-popup{
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+#pop-1{
+    display: none;
+}
+#pop-2{
+    display: none;
+}#pop-3{
+    display: none;
+}#pop-4{
+    display: none;
+}#pop-5{
+    display: none;
+}

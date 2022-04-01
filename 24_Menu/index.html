@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Passions+Conflict&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <navbar class="nav">
+                <h2>Wissen Yapı</h2>
+                <ul>
+                    <li><a href="#">Anasayfa</a> </li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Tarihçe</a></li>
+                    <li><a href="#">İletişim</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Projeler <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Stat Projesi</a>
+                            <a href="#">Gümrük Projesi</a>
+                            <a href="#">Ataşehir Projesi</a>
+                        </div>
+                    </li>
+                </ul>
+            </navbar>
+        </div>
+
+        <div class="sliderContent">
+            <div class="slide ">
+                <img src="./image/1.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="./image/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./image/3.jpg" alt="">
+            </div>
+            <a class="prevSlide">&#10094</a>
+            <a class="nextSlide">&#10095</a>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="row">
+                <div class="col">
+                    <div class="col-in"><img src="./image/1.jpg" alt="" class="img-1">
+                        <div class="inside">
+                            <p>Ataşehir Projesi</p>
+                        </div>
+                    </div>
+                    <div class="col-in"><img src="./image/2.jpg" alt="" class="img-2">
+                        <div class="inside">
+                            <p>Gümrük Projesi</p>
+                        </div>
+                    </div>
+                    <div class="col-in"><img src="./image/3.jpg" alt="" class="img-3">
+                        <div class="inside">
+                            <p>Stad Projesi</p>
+                        </div>
+                    </div>
+                    <div class="col-in"><img src="./image/4.jpg" alt="" class="img-4">
+                        <div class="inside">
+                            <p>Yurtdışı Projesi</p>
+                        </div>
+                    </div>
+                    <div class="col-in"><img src="./image/5.jpg" alt="" class="img-5">
+                        <div class="inside">
+                            <p>Kent Projesi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="main-popup">
+        <div class="close-popup" style="cursor: pointer;"><i class="fa-solid fa-xmark"></i></div>
+        <div class="popup" id="pop-1">
+            <p>Yapım yılı:<strong>2020-Haziran</strong></p><br>
+            <p>Bitiş yılı:<strong>2022-Aralık</strong></p><br>
+            <p>Şehir:<strong>İstanbul</strong></p><br>
+            <p>Alan:<strong>300.000 m<sup>2</sup></strong></p>
+        </div>
+        <div class="popup" id="pop-2">
+            <p>Yapım yılı:<strong>2021-Şubat</strong></p><br>
+            <p>Bitiş yılı:<strong>2023-Eylül</strong></p><br>
+            <p>Şehir:<strong>Bolu</strong></p><br>
+            <p>Alan:<strong>280.000 m<sup>2</sup></strong></p>
+        </div>
+        <div class="popup" id="pop-3">
+            <p>Yapım yılı:<strong>2022-Haziran</strong></p><br>
+            <p>Bitiş yılı:<strong>2024-Kasım</strong></p><br>
+            <p>Şehir:<strong>Erzurum</strong></p><br>
+            <p>Alan:<strong>330.000 m<sup>2</sup></strong></p>
+        </div>
+        <div class="popup" id="pop-4">
+            <p>Yapım yılı:<strong>2019-Şubat</strong></p><br>
+            <p>Bitiş yılı:<strong>2020-Haziran</strong></p><br>
+            <p>Şehir:<strong>İstanbul</strong></p><br>
+            <p>Alan:<strong>190.000 m<sup>2</sup></strong></p>
+        </div>
+        <div class="popup" id="pop-5">
+            <p>Yapım yılı:<strong>2022-Mart</strong></p><br>
+            <p>Bitiş yılı:<strong>2023-Şubat</strong></p><br>
+            <p>Şehir:<strong>İstanbul</strong></p><br>
+            <p>Alan:<strong>300.000 m<sup>2</sup></strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
