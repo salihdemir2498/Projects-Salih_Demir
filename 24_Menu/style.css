@@ -29,16 +29,19 @@ body{
 .nav ul li a{
     text-decoration: none;
     /* background-color: red; */
-    border: 1px solid;
-    border-radius: 15px;
+    /* border: 1px solid;
+    border-radius: 15px; */
     font-size: 26px;
     padding: 5px;
+  
+font-family: 'Bebas Neue', cursive;
+
 
 }
 
 .nav ul li a:hover{
-    color: lightgray;
-    background-color: purple;
+    color: rgb(224, 112, 112);
+    /* background-color: purple; */
 }
 
 .nav h2{
@@ -170,21 +173,9 @@ body{
 .active{
     background-color: red !important;
 }
-
-/* .card-container{
-    display: flex;
-    flex-direction: column;
+.card-container{
+    margin-bottom: 20px;
 }
-
-.card-container .row{
-    display: flex;
-    flex-direction: column;
-}
-
-.card-container .row .col{
-    display: inline-block;
-
-} */
 .card-container .row {
     margin-left: 35px;
 }
@@ -215,11 +206,22 @@ body{
     cursor: pointer;
 }
 
+.mainnn{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1100px;
+    /* background-color: aqua; */
+}
+
 .main-popup{
     display: none;
     border: 1px solid black;
     background-color: rgb(255, 71, 255);
     color: white;
+    font-size: large;
     width: 400px;
     height: 180px;
     text-align: center;
@@ -248,4 +250,45 @@ body{
     display: none;
 }#pop-5{
     display: none;
+}
+
+.footer{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    opacity: 0.8;
+}
+
+ .footer-container
+{
+    /* background-color: rgb(141, 135, 135); */
+    /* position: absolute; */
+    width: 100%;
+    height: 100px;
+    position: relative;
+    
+  
+}
+
+.footer-container .icons{
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    cursor: pointer;
+}
+.footer-container .about{
+    width: 38%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.footer-container .city{
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-45%);
 }

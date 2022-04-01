@@ -47,6 +47,10 @@ showSlide(slideIndex);
 
 $(document).ready(function(){
     $(".img-1").click(function(){
+        $(".mainnn").css({
+            display: "block",
+               
+        })
         $(".main-popup").css({
             display: "block",
                
@@ -55,10 +59,15 @@ $(document).ready(function(){
             display: "block"    
         })
         $(".container").css({
-            opacity: 0.3   
+            opacity: 0.3,
+               
         })
     })
     $(".img-2").click(function(){
+        $(".mainnn").css({
+            display: "block",
+               
+        })
         $(".main-popup").css({
             display: "block",
                
@@ -71,6 +80,10 @@ $(document).ready(function(){
         })
     })
     $(".img-3").click(function(){
+        $(".mainnn").css({
+            display: "block",
+               
+        })
         $(".main-popup").css({
             display: "block",
                
@@ -83,6 +96,10 @@ $(document).ready(function(){
         })
     })
     $(".img-4").click(function(){
+        $(".mainnn").css({
+            display: "block",
+               
+        })
         $(".main-popup").css({
             display: "block",
                
@@ -95,6 +112,10 @@ $(document).ready(function(){
         })
     })
     $(".img-5").click(function(){
+        $(".mainnn").css({
+            display: "block",
+               
+        })
         $(".main-popup").css({
             display: "block",
                
@@ -107,10 +128,15 @@ $(document).ready(function(){
         })
     })
     $(".close-popup").click(function(){
+        $(".mainnn").css({
+            display: "none",
+               
+        })
         $(".main-popup").css({
             display: "none",
                
         })
+
         $("#pop-5").css({
             display: "none"    
         })
@@ -130,6 +156,36 @@ $(document).ready(function(){
             opacity: 1   
         })
     })
+
+    $(".mainnn").click(function(){
+        $(".mainnn").css({
+            display: "none"
+        })
+        $(".main-popup").css({
+            display: "none"
+        })
+        $(".container").css({
+            display: "block",
+            opacity: 1
+        })
+        $("#pop-5").css({
+            display: "none"    
+        })
+        $("#pop-4").css({
+            display: "none"    
+        })
+        $("#pop-3").css({
+            display: "none"    
+        })
+        $("#pop-2").css({
+            display: "none"    
+        })
+        $("#pop-1").css({
+            display: "none"    
+        })
+    })
 })
+
+
 
 
