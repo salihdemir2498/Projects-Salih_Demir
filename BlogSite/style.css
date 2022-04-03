@@ -1,0 +1,135 @@
+ *{
+    padding: 0;
+    margin: 0;
+} 
+
+body{
+    /* background: url("./image/1.webp") no-repeat center center fixed ;
+    background-size: cover; */
+    background-color: rgb(106, 99, 99);
+}
+
+.container{
+    width: 99vw;
+    height: 99vh;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 87, 87);
+    width: 100%;
+    height: 75px;
+}
+
+nav h2{
+    /* border: 1px solid black; */
+    padding-left: 40px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav div{
+    /* border: 1px solid black; */
+    margin-right: 10px;
+
+}
+
+nav div a{
+    text-decoration: none;
+    padding: 15px 15px 10px;
+    font-size: 16px;
+    color: white;
+
+}
+
+nav div a:hover{
+    color: yellow;
+}
+.main-content{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+main .main-content h1{
+    color: rgb(203, 241, 229);
+    margin-left: 15px;
+    text-decoration: underline;
+    margin-bottom: 13px;
+}
+
+main .main-content .text{
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    word-spacing: 3px;
+    line-height: 1.6;
+}
+
+main .main-content .main-content_1{
+    width: 70%;
+    margin-top: 20px;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+main .main-content .main-content_2{
+    margin-left: 30px;
+}
+
+.main-content_1 em a{
+    cursor: pointer;
+}
+.css{
+    margin-left: 10px;
+}
+.css h1{
+    margin-left: 5px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.css p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.css h2{
+    margin-left: 5px;
+    color: white;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.css h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#i1{
+    width: 80%;
+    height: 50px;
+}
+
+#i2{
+    width: 200px;
+    height: 300px;
+}
+
+#i3{
+    width: 80%;
+    height: 50px;
+}
+
+#i4{
+    width: 80%;
+    height: 200px;
+}
