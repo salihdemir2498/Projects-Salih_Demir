@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <title>MVC_Proje1</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg nav-bar-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fs-3 bg-danger px-3 rounded-2" href="#">Wissen Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="home">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="hakkimizda">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="dersler" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dersler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="dersler">DERSLER</a></li>
+                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#">JQuery</a></li>
+                                <li><a class="dropdown-item" href="#">React</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">C# Temelleri</a></li>
+                                <li><a class="dropdown-item" href="#">ASP.NET Core</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="iletisim">İletişim</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                        <button class="btn btn-outline-light bg-secondary btn-lg" type="submit">Ara</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <section class="mt-5">
+        <div class="bos" style="margin-top: 75px;"> @RenderBody();</div>
+
+        <!--Burasaı her sayfada değişecek olan kısımdır.-->
+       
+    </section>
+
+    <footer>
+        <div class="container-fluid my-footer text-white text-center">
+            <p>Bu site Wissen Akademie Web-6 Sabah Grubu tarafından yapılmıştır.</p>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+</html>
