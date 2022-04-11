@@ -8,12 +8,12 @@ var i = 0;
 slaytGoster(slaytNo);
 
 
-function sonrakiSlayt() {
+function sonrakiSlaytt() {
     slaytNo++;
     slaytGoster(slaytNo);
   }
 
-  function oncekiSlayt() {
+  function oncekiSlaytt() {
     slaytNo--;
     slaytGoster(slaytNo);
   }
@@ -42,3 +42,5 @@ function sonrakiSlayt() {
     })
 
   })
+
+
