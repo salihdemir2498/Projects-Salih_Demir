@@ -34,3 +34,11 @@ function sonrakiSlayt() {
 
 
   }
+
+  $(document).ready(function(){
+    $(".span").click(function(){
+      $(".span").hide(1000);
+        $(".searchh").show(1000);
+    })
+
+  })
