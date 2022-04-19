@@ -1,0 +1,30 @@
+@model List<EF_Core_Mvc_Code.Models.Turler>
+@{
+    ViewData["Title"] = "Kitap Türleri";
+}
+
+<h1>Kitap Türleri</h1>
+<a asp-action="Create">Yeni Kitap Türü</a>
+
+<table class="table table-dark w-50">
+    <thead>
+        <tr>
+            <th>Kitap Türü Id</th>
+            <th>Kitap Türü</th>
+            <th>Yapılacak İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tur in Model)
+        {
+            <tr>
+                <td>@tur.Id</td>
+                <td>@tur.TurAd</td>
+                <td><a class="btn btn-sm btn-success " asp-action="Details" asp-route-id="@tur.Id">Detaylar</a>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@tur.Id">Düzenle</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@tur.Id">Sil</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
