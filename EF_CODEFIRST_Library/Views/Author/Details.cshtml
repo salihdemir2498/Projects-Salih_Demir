@@ -1,0 +1,20 @@
+@model EF_CODEFIRST.Models.Author
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Yazarın Detayları</h1>
+
+<div>
+    <h4>Yazar Id:</h4>
+    <p>@Model.AuthorId</p>
+    <h4>Yazar Ad:</h4>
+    <p>@Model.AuthorName</p>
+    <h4>Yazar Soyad:</h4>
+    <p>@Model.AuthorSurname</p>
+    <h4>Silindi</h4>
+    <p>@Model.IsDeleted</p>
+</div>
+
+<a asp-action="Index">Kategori listesine dön.</a>

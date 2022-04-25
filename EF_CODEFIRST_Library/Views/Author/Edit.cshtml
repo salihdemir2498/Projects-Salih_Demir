@@ -1,0 +1,23 @@
+@model EF_CODEFIRST.Models.Author
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="display-3">Kategori Düzenle</h1>
+<div class="row">
+    <div class="col-md-4">
+       <form asp-action="Edit">
+            <div class="form-group">
+                <input type="hidden" asp-for="AuthorId">
+                <label class="control-label">Yazar Adı</label>
+                <input class="form-control" type="text" asp-for="AuthorName"><br>
+                <label class="control-label">Yazar Açıklaması</label>
+                <input class="form-control" type="text" asp-for="AuthorSurname">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Değişiklikleri Kaydet" class="btn btn-primary">
+
+            </div>
+        </form> 
+    </div>
+</div>

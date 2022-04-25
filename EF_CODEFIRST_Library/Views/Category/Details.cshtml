@@ -1,0 +1,19 @@
+@model EF_CODEFIRST.Models.Category
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Kategori Detayları</h1>
+
+<div>
+    <h4>Kategori Id:</h4>
+    <p>@Model.CategoryId</p>
+    <h4>Kategori Ad:</h4>
+    <p>@Model.CategoryName</p>
+    <h4>Kategori Açıklaması</h4>
+    <p>@Model.CategoryDescription</p>
+    <h4>Silindi</h4>
+    <p>@Model.IsDeleted</p>
+</div>
+
+<a asp-action="Index">Kategori listesine dön.</a>

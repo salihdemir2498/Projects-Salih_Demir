@@ -1,0 +1,21 @@
+@model EF_CODEFIRST.Models.Publisher
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Yayımcı Detayları</h1>
+
+<div>
+    <h4>Publisher Id:</h4>
+    <p>@Model.PublisherId</p>
+    <h4>Yayımcı Ad:</h4>
+    <p>@Model.PublisherName</p>
+    <h4>Yayımcı Şehir:</h4>
+    <p>@Model.PublisherCity</p>
+    <h4>Yayımcı Mail:</h4>
+    <p>@Model.PublisherMail</p>
+    <h4>İsDeleted:</h4>
+    <p>@Model.IsDeleted</p>
+</div>
+
+<a asp-action="Index">Kategori listesine dön.</a>

@@ -1,0 +1,36 @@
+@model Member
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Üye Detayları</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <h4>Member Id:</h4>
+        <p>@Model.MemberId</p>
+        <h4>Member Name:</h4>
+        <p>@Model.MemberName</p>
+        <h4>Member Surname</h4>
+        <p>@Model.MemberSurname</p>
+        <h4>Member DateOfBirth</h4>
+        <p>@Model.MemberDateOfBirth</p>
+        <h4>Member Phone</h4>
+        <p>@Model.MemberPhoneNumber</p>
+        <h4>Member Mail</h4>
+        <p>@Model.MemberMail</p>
+    </div>
+    <div class="col-md-4">
+        
+        <h4>Member JoinDate</h4>
+        <p>@Model.MemberJoinDate/p>
+        <h4>Member Job</h4>
+        <p>@Model.MemberJob</p>
+        <h4>Silindi</h4>
+        <p>@Model.IsDeleted</p>
+    </div>
+
+
+</div>
+
+<a asp-action="Index">Üyeler listesine dön.</a>

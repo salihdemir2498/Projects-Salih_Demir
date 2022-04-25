@@ -1,0 +1,33 @@
+@model Publisher
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Yayımcı Sil</h3>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Yayımcı Adı:</th>
+            <th>Yayımcı Şehri:</th>
+            <th>Yayımcı Mail:</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@Model.PublisherName</td>
+                <td>@Model.PublisherCity</td>
+                <td>@Model.PublisherMail</td>
+            </tr>
+    </tbody>
+
+</table>
+
+<form asp-action="Delete">
+<input type="hidden" asp-for="IsDeleted">
+<input type="submit" value="Kitab Türünü Sil" class="btn btn-danger">
+</form>
+
+<div>
+    <a asp-action="">Yayımcı Listesine Geri Dön</a>
+</div>

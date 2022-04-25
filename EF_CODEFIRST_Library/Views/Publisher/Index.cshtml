@@ -1,0 +1,55 @@
+@model List<EF_CODEFIRST.Models.Publisher>;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Yayımcı Sayfası</h1>
+
+<a asp-action="Create">Yeni Yayımcı Ekle</a>
+<table class="table table-dark fs-1" style="width: 69%;">
+    <thead>
+        <tr>
+            <th>Publisher Id</th>
+            <th>Publisher Name</th>
+            <th>Publisher City</th>
+            <th>Publisher Mail</th>
+            <th>Publisher İsDeleted</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (@item.IsDeleted==true)
+            {
+            <tr style="background-color: red;">
+                <td>@item.PublisherId</td>
+                <td>@item.PublisherName</td>
+                <td>@item.PublisherCity</td>
+                <td>@item.PublisherMail</td>
+                <td>@item.IsDeleted</td>
+
+                <td class="w-50"><a class="btn btn-sm btn-success " asp-action="Details" asp-route-id="@item.PublisherId">Detaylar</a>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.PublisherId">Düzenle</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.PublisherId">Sil</a></td>
+            </tr>
+            }
+            else
+            {
+             <tr>
+                <td>@item.PublisherId</td>
+                <td>@item.PublisherName</td>
+                <td>@item.PublisherCity</td>
+                <td>@item.PublisherMail</td>
+                <td>@item.IsDeleted</td>
+
+                <td class="w-50"><a class="btn btn-sm btn-success " asp-action="Details" asp-route-id="@item.PublisherId">Detaylar</a>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.PublisherId">Düzenle</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.PublisherId">Sil</a></td>
+            </tr>
+            }
+           
+        }
+    </tbody>
+</table>

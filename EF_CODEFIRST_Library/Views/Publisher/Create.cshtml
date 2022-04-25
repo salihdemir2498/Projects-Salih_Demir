@@ -1,0 +1,25 @@
+@model EF_CODEFIRST.Models.Publisher
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="display-3">Yeni Yayımcı Ekle</h1>
+<div class="row">
+    <div class="col-md-4 ">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label class="control-label">Yayımcı Adı:</label>
+                <input type="text" asp-for="PublisherName" class="form-control">
+                <label class="control-label">Yayımcı Şehir:</label>
+                <input type="text" asp-for="PublisherCity" class="form-control">
+                <label class="control-label">Yayımcı Mail:</label>
+                <input type="text" asp-for="PublisherMail" class="form-control">
+            <div class="form-group mt-2">
+                <input type="submit" value="Kaydet" class="btn btn-success">
+            </div>
+        </form>
+
+    <div>
+    <a asp-action="">Yayımcı Listesine Geri Dön</a>
+</div>
+
